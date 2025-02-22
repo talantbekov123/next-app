@@ -10,17 +10,7 @@ import PageFrame from '../components/PageFrame';
 import { Add } from '../styles/pages/home';
 import { GetServerSideProps } from 'next';
 import { geLoans } from '../utils';
-import { ModalHandles } from '../types';
-
-interface Loan {
-  id: string;
-  amount: number;
-  interest: number;
-  duration: number;
-  collateral: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
+import { Loan, ModalHandles } from '../types';
 
 export default function Home({ loans: storedLoans }) {
   const [loans, setLoans] = useState<Array<Loan>>(storedLoans);

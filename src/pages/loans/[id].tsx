@@ -5,16 +5,7 @@ import { toast } from 'react-toastify';
 import Head from 'next/head';
 import PageFrame from '../../components/PageFrame';
 import { LoanDetail, LoanContainer, Message, LoanDetailsButton } from '../../styles/pages/loanDetails';
-
-interface Loan {
-  id: string;
-  amount: number;
-  interest: number;
-  duration: number;
-  collateral: string;
-  createdAt?: string;
-  updatedAt?: string;
-}
+import { Loan } from '../../types';
 
 const LoanDetails = () => {
   const router = useRouter();
