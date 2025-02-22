@@ -2,9 +2,14 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export const geLoans = async function () {
-  const loans = await prisma.loan.findMany();
-  prisma.$disconnect();
-  return loans;
+  try {
+    const loans = await prisma.loan.findMany();
+    prisma.$disconnect();
+    return loans;
+  } catch {
+    return [];
+  }
+  
 }
 
 export const calculateAPR = function (duration: number) {
