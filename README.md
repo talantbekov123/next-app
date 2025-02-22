@@ -1,6 +1,4 @@
-# Project Name
-
-A Next.js project with essential scripts for development, production, and linting.
+#  Loan Management Application
 
 ## Prerequisites
 
