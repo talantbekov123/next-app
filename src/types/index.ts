@@ -4,8 +4,8 @@ export interface Loan {
     interest: number;
     duration: number;
     collateral: string;
-    createdAt?: string;
-    updatedAt?: string;
+    createdAt?: number;
+    updatedAt?: number;
 }
 
 export interface ModalHandles {
