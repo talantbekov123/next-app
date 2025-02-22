@@ -17,9 +17,11 @@
 ```
 Create a .env file and assign a value to the DATABASE_URL variable.
 ```
-3. **Install dependencies, build and run the project:**
+3. **Install dependencies, run Prisma commands, build, and start the project:**
 ```
 npm install
+npx prisma generate
+npx prisma db pull
 npm run build
 npm run start
 ```
