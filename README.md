@@ -34,6 +34,10 @@ These scripts are defined in the `package.json` and help manage the project.
 - **Command:** `next dev`
 - **Description:** Starts the development server with hot reloading.
 
+## `test`
+- **Command:** `npx jest`
+- **Description:** Executes all tests inside the project
+
 ## `build`
 - **Command:** `next build`
 - **Description:** Builds the application for production.
